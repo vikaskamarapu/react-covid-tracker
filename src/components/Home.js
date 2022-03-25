@@ -7,12 +7,12 @@ import {
   Card,
   CardContent,
 } from "@material-ui/core";
-import InfoBox from "../InfoBox";
-import LineGraph from "../LineGraph";
-import Table from "../Table";
-import { sortData, prettyPrintStat ,numberFormat } from "../util";
+import InfoBox from "./InfoBox";
+import LineGraph from "./LineGraph";
+import Table from "./Table";
+import { sortData, prettyPrintStat ,numberFormat } from "./util";
 import numeral from "numeral";
-import Map from "../Map";
+import Map from "./Map";
 import "leaflet/dist/leaflet.css";
 
 const Home = () => {

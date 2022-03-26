@@ -19,13 +19,15 @@ function NavBar() {
             >
               <Link className='nav-link active' to="/">HOME</Link>
               <Link className='nav-link active' to="blog">BLOG</Link>
-              <Link className='nav-link active' to="suggestions">SUGGESTIONS</Link>
+              {/* <Link className='nav-link active' to="suggestions">SUGGESTIONS</Link> */}
+              <Link className='nav-link active' to="about">ABOUT</Link>
+              <Link className='nav-link active' to="support">FAQ'S</Link>
               {/* <NavDropdown title="JOIN US" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="signup">SIGNUP</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="login">LOGIN</NavDropdown.Item>
               </NavDropdown> */}
-              <Link className='nav-link active' to="joinus" >LOGIN/SIGNUP</Link>
+              {/* <Link className='nav-link active' to="joinus" >LOGIN/SIGNUP</Link> */}
               <Link className='nav-link active' to="contactus" >
                 CONTACT US
               </Link>
@@ -39,6 +41,7 @@ function NavBar() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
+            <Button className='m-2' variant="outline-primary" to="joinus">Login/Signup</Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>

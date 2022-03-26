@@ -21,7 +21,7 @@ function About() {
         <div class="row text-center">
           {/* <!-- Team item--> */}
           <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="shadow p-3 mb-5 bg-white rounded"><img src="https://cdn2.vectorstock.com/i/1000x1000/98/11/girl-icon-flat-single-avatarpeaople-icon-from-vector-14449811.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
+            <div  class="shadow p-3 mb-5 bg-white rounded"><img src="https://cdn2.vectorstock.com/i/1000x1000/98/11/girl-icon-flat-single-avatarpeaople-icon-from-vector-14449811.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
               <h5 class="mb-0">Keerthana</h5>
               <span class="small text-uppercase text-muted">Team Member</span>
               

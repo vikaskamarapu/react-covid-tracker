@@ -1,9 +1,12 @@
 import React from 'react'
 import { Navbar, Container, Button, NavDropdown, Nav, Form, FormControl } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import logo from '../components/images/logo.png'
 
+
 function NavBar() {
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar bg="light" expand="lg">
@@ -41,7 +44,7 @@ function NavBar() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
-            <Button className='m-2' variant="outline-primary" to="joinus">Login/Signup</Button>
+            <Button className='m-2' variant="outline-primary" onClick={() => navigate('/joinus')}>Login/Signup</Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>

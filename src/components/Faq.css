@@ -1,9 +1,8 @@
 h1{
   text-align: center;
+  padding-bottom: 50px;
 }
-body{
+.columns{
   text-align: center;
-}
-.row-text-center{
-  display: flex;
+  justify-content: space-around;
 }

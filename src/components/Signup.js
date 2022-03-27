@@ -5,7 +5,7 @@ import './Signup.css'
 function Signup() {
     return (
         <div className='signup'>
-            <form className='sign-box mx-auto'>
+            <form className='sign-box mx-auto bg-light'>
                 <h1>Sign Up</h1>
                 <div className="form-group mb-3">
                     <label>First name</label>
@@ -23,9 +23,11 @@ function Signup() {
                     <label>Password</label>
                     <input type="password" className="form-control mb-3" placeholder="Enter password" />
                 </div>
+                <div className='text-center'>
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
-                <p className="forgot-password text-right">
-                    Already registered <Link to={{ pathname: '/joinus' }}>sign in?</Link>
+                </div>
+                <p className="forgot-password text-right pt-3">
+                    Already had an account <Link to={{ pathname: '/joinus' }}>sign in?</Link>
                 </p>
             </form>
         </div>

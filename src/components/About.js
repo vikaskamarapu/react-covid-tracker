@@ -11,46 +11,46 @@ function About() {
         <p>Standard recommendations to prevent infection spread include regular hand washing, covering mouth and nose when coughing and sneezing and maintaining personal hygiene and avoiding close contact with anyone showing symptoms of respiratory illness such as coughing and sneezing.</p>
       </div>
       {/* our team */}
-      <div class="container ">
-        <div class="row mb-4">
-            <h1>Our team</h1>
+      <div className="container ">
+        <div className="row mb-4">
+          <h1 > Our team</h1>
             
           
         </div>
 
-        <div class="row text-center">
+        <div className="row text-center">
           {/* <!-- Team item--> */}
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div  class="shadow p-3 mb-5 bg-white rounded"><img src="https://cdn2.vectorstock.com/i/1000x1000/98/11/girl-icon-flat-single-avatarpeaople-icon-from-vector-14449811.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
-              <h5 class="mb-0">Keerthana</h5>
-              <span class="small text-uppercase text-muted">Team Member</span>
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div  className="shadow p-3 mb-5 bg-white rounded"><img src="https://cdn2.vectorstock.com/i/1000x1000/98/11/girl-icon-flat-single-avatarpeaople-icon-from-vector-14449811.jpg" alt="" width="100" className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
+              <h5 className="mb-0">Keerthana</h5>
+              <span className="small text-uppercase text-muted">Team Member</span>
               
             </div>
           </div>
           {/* <!-- End--> */}
 
           {/* <!-- Team item--> */}
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="shadow p-3 mb-5 bg-white rounded"><img src="https://www.terrainhopperusa.com/wp-content/uploads/2019/01/avatar-man.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
-              <h5 class="mb-0">Vikas</h5><span class="small text-uppercase text-muted">Team Member</span>
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="shadow p-3 mb-5 bg-white rounded"><img src="https://www.terrainhopperusa.com/wp-content/uploads/2019/01/avatar-man.png" alt="" width="100" className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
+              <h5 className="mb-0">Vikas</h5><span className="small text-uppercase text-muted">Team Member</span>
              
             </div>
           </div>
           {/* <!-- End--> */}
 
           {/* <!-- Team item--> */}
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="shadow p-3 mb-5 bg-white rounded"><img src="https://www.terrainhopperusa.com/wp-content/uploads/2019/01/avatar-man.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
-              <h5 class="mb-0">Nihal</h5><span class="small text-uppercase text-muted">Team Member</span>
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="shadow p-3 mb-5 bg-white rounded"><img src="https://www.terrainhopperusa.com/wp-content/uploads/2019/01/avatar-man.png" alt="" width="100" className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
+              <h5 className="mb-0">Nihal</h5><span className="small text-uppercase text-muted">Team Member</span>
               
             </div>
           </div>
           {/* <!-- End-->
 
           <!-- Team item--> */}
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="shadow p-3 mb-5 bg-white rounded"><img src="https://www.terrainhopperusa.com/wp-content/uploads/2019/01/avatar-man.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
-              <h5 class="mb-0">Sankeerth</h5><span class="small text-uppercase text-muted">Team Member</span>
+          <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="shadow p-3 mb-5 bg-white rounded"><img src="https://www.terrainhopperusa.com/wp-content/uploads/2019/01/avatar-man.png" alt="" width="100" className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
+              <h5 className="mb-0">Sankeerth</h5><span className="small text-uppercase text-muted">Team Member</span>
               
             </div>
           </div>

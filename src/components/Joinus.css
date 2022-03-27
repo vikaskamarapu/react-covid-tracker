@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+ .forgot-password a {
+    color: #167bff;
+  }
+  .forgot-password{
+      text-align: right;
+  }
+  label,h1 {
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
+  }
+  .sign-box{
+      padding: 100px;
+      background-color: aliceblue;
+      border-radius: 20px;
+      width: 500px;
+  }

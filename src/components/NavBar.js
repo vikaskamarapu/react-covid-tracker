@@ -44,7 +44,7 @@ function NavBar() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
-            <Button className='m-2' variant="outline-primary" onClick={() => navigate('/joinus')}>Login/Signup</Button>
+            <Button className='m-2' variant="outline-primary" onClick={() => navigate('/joinus')}>Signin/Signup</Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>

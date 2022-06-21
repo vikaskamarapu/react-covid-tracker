@@ -9,6 +9,7 @@ import Support from "./components/Faq";
 import Signup from "./components/Signup";
 import Faq from "./components/Faq";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/faq" element={<Faq />}></Route>
         <Route path="/ContactUs" element={<ContactUs />}></Route>
       </Routes>
+      <Footer />
     </div>
   )
 }

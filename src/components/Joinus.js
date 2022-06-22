@@ -6,6 +6,10 @@ import React from "react";
 import './Joinus.css';
 import google from './images/google.svg';
 import facebook from './images/facebook.svg';
+import {useSelector, useDispatch} from "react-redux";
+import {userLogin} from "./slices/userSlice";
+import { useEffect } from "react";
+
 
 
 
@@ -16,27 +20,28 @@ function Joinus() {
         handleSubmit,
         formState: { errors }
     } = useForm();
-    
 
-    //get navigate functon to navigate programatically
+
+    let { userObj, isError, isLoading, isSuccess, errMsg } = useSelector(
+        (state) => state.user
+    );
+
+    let dispatch = useDispatch();
+
     let navigate = useNavigate();
 
-
-    
     const onFormSubmit = (userCredentialsObject) => {
-        
-        axios.post('http://localhost:4000/user-api/login', userCredentialsObject)
-            .then(response => {
-                alert(response.data.message);
-                if (response.data.message === 'success') {
-                    navigate('/')
-                }
-            })
-            .catch(error => {
-                console.log(error)
-                alert("invalid username or password")
-            })
+        dispatch(userLogin(userCredentialsObject));
     };
+
+    useEffect(() => {
+        if (isSuccess) {
+            navigate("/");
+        }
+        if (isError) {
+            alert("Invalid Username or Password !!!");
+        }
+    }, [isSuccess, isError]);
     return (
         <div className='mb-4'>
 

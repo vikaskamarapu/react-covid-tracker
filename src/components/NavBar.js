@@ -4,12 +4,29 @@ import { Link, NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import logo from '../components/images/logo.png';
 import './NavBar.css';
+import { useSelector } from "react-redux";
+import { clearLoginStatus } from "./slices/userSlice";
+import { useDispatch } from "react-redux";
 
 
 
 function NavBar() {
 
-  const navigate = useNavigate();
+  let navigate = useNavigate();
+
+  let { userObj, isError, isLoading, isSuccess, errMsg } = useSelector(
+    (state) => state.user
+  );
+  //get dispathc function
+  let dispath = useDispatch();
+
+
+  //logout user
+  const userLogout = () => {
+    localStorage.clear();
+    dispath(clearLoginStatus());
+    navigate("/joinus");
+  };
 
   return (
     <div>
@@ -41,10 +58,15 @@ function NavBar() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
-            {/* {isSuccess !== true ? (
-                <> */}
-            <Button className='m-2' variant="outline-primary" onClick={() => navigate('/joinus')}>Signin/Signup</Button>
-
+            {isSuccess !== true ? (
+              <>
+                <Button className='m-2' variant="outline-primary" onClick={() => navigate('/joinus')}>Signin/Signup</Button>
+              </>) :
+              (
+                <Button className='m-2' variant="outline-primary" onClick={userLogout}>
+                  Logout
+                </Button>
+              )}
           </Navbar.Collapse>
         </Container>
       </Navbar>
